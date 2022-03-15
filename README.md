@@ -1,14 +1,18 @@
-## Installation
+![SMSLegal][smslegal-logo]
+# ✉️ SMSLegal
 
-This is a [Node.js](https://nodejs.org/en/) module available through the
-[npm registry](https://www.npmjs.com/).
+## Install
 
-Installation is done using the
-[`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
-
+You can install with [npm][smslegal-npm]:
 ```bash
-$ npm install smslegal
+  npm install smslegal
 ```
+
+You can install with [yarn][smslegal-yarn]:
+```bash
+  yarn add smslegal
+```
+
 
 ## Features
 
@@ -20,36 +24,41 @@ $ npm install smslegal
 
 First you need import the package for your project:
 
-```
+```TypeScript
 const smslegal = require('smslegal');
 ```
 
   You need config with yours access:
 
-```
+```TypeScript
 smslegal.config({user: "YOUR_USER", pass: "YOUR_PASS"});
 ```
 
 ## Examples
 
 Verify balance of account.
-```
+```TypeScript
 smslegal.balance()
 ```
 
   You can send a async sms, the number has to count the code 55 from brazil, after the ddd without the 0, plus 9 mobile number:
 
-```
+```TypeScript
 smslegal.send({numberSMS: 5566999999999, message: "Message SMS"})
 ```
 
 You can verify status of your sms of you send.
-```
+```TypeScript
 smslegal.verifyStatus({messageId: 123112})
 ```
 
 
+****
+This project is under the MIT license. See the [LICENSE][license-link] file for more details.
 
-## License
 
-  [MIT](LICENSE)
+<!-- Markdown link & img's -->
+[license-link]: /LICENSE
+[smslegal-logo]: https://i.imgur.com/9eCs2eb.png
+[smslegal-npm]: https://www.npmjs.com/package/smslegal
+[smslegal-yarn]: https://yarnpkg.com/package/smslegal

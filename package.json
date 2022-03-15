@@ -1,6 +1,6 @@
 {
   "name": "smslegal",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Conexão com a API do smslegal.com.br para envio de sms.",
   "main": "dist/index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/marconwillian/smslegal.git"
+    "url": "https://github.com/themarkwill/smslegal.git"
   },
   "keywords": [
     "smslegal",
@@ -18,22 +18,22 @@
   "author": "Marcon Willian Oliveira Neves <“marconwillian@protonmail.com”>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/marconwillian/smslegal/issues"
+    "url": "https://github.com/themarkwill/smslegal/issues"
   },
-  "homepage": "https://github.com/marconwillian/smslegal#readme",
+  "homepage": "https://github.com/themarkwill/smslegal#readme",
   "devDependencies": {
-    "@types/node": "^14.14.35",
-    "@typescript-eslint/eslint-plugin": "^4.18.0",
-    "@typescript-eslint/parser": "^4.18.0",
-    "eslint": "7.22.0",
-    "eslint-config-airbnb-base": "^14.2.1",
+    "@types/node": "^17.0.21",
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.2.1",
-    "typescript": "^4.2.3",
+    "ts-node": "^10.7.0",
     "ts-node-dev": "^1.1.6",
-    "ts-node": "^9.1.1"
+    "typescript": "^4.2.3"
   }
 }
