@@ -31,7 +31,7 @@ jobs:
       with:
         node-version: '12.x'
         registry-url: 'https://npm.pkg.github.com'
-        scope: '@marconwillian'
+        scope: '@themarkwill'
     - run: npm install
     - run: npm run build
     - name: Update package.json to GitHubName
@@ -39,7 +39,7 @@ jobs:
       with:
         file: package.json
         field: name
-        value: '@marconwillian/smslegal'
+        value: '@themarkwill/smslegal'
     - run: npm publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_TOKEN }}
