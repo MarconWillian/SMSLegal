@@ -143,22 +143,18 @@ const balance = async (): Promise<Balance> => {
         smsRemaining: parseInt(response.split("OK ")[1])
       };
     } else if (response.includes('ERR')) {
-      throw new Error(response);
+      return {
+        statusRequest: "error",
+        number: parseInt(response.split("ERR ")[1])
+      };
     } else {
       throw new Error('Intern Error!');
     }
-  } catch (err) {
-    if (err.includes('ERR')) {
-      return {
-        statusRequest: "error",
-        number: parseInt(err.split("ERR ")[1])
-      };
-    } else {
-      return {
-        statusRequest: "error",
-        number: 0
-      };
-    }
+  } catch (error) {
+    return {
+      statusRequest: "error",
+      number: 0
+    };
   }
 };
 
